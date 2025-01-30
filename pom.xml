@@ -63,6 +63,17 @@
                         <packagingExcludes>WEB-INF/web.xml</packagingExcludes>
                         <failOnMissingWebXml>false</failOnMissingWebXml>
                     </configuration>
+                         <distributionManagement>
+		 <snapshotRepository>
+		    <id>nexusRepo</id>
+		    <url>http://15.207.117.54:8081/repository/maven-snapshots/</url>
+		 </snapshotRepository>
+		
+		<repository>
+		    <id>nexusRepo</id>
+		    <url>http://15.207.117.54:8081/repository/maven-releases/</url>
+		</repository>
+  	</distributionManagement>
                 </plugin>
             </plugins>
         </pluginManagement>
